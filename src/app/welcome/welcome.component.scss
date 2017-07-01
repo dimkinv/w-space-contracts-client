@@ -1,0 +1,24 @@
+.eve-sso-login-btn{
+    background: url('/assets/images/eve_sso_login.png');
+    border:none;
+    width:270px;
+    height:45px;
+
+    &:focus{
+        outline: 0;
+    }
+
+    &:active{
+        box-shadow: 0px 0px 0px;
+    }
+    cursor: pointer;
+    box-shadow: 2px 2px 6px black;
+}
+
+.flex{
+    display:flex;
+}
+
+.margin-top{
+    margin-top:30px;
+}

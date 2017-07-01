@@ -1,0 +1,12 @@
+<div class="row justify-content-center">
+    <div class="col-12" >
+        <h1 style="text-align: center">Welcome to EVE Online W-Space contracts</h1>
+    </div>
+    <a [href]="ssoAuthorizationUri" class="eve-sso-login-btn"></a>
+</div>
+
+<div class="row justify-content-center margin-top">
+    <div class="col-12 flex justify-content-center">
+        <wsc-character [character]="char" *ngFor="let char of characters" (click)="onCharacterClick(char)"></wsc-character>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <div class="inner-loader" *ngIf="!character.characterId"></div>
+    <div class="inner-content" *ngIf="character.characterId">
+        <div class="character-logo" [ngStyle]="{background:character.characterId | toCharacterImage}"></div>
+        <div class="corporation-logo" [ngStyle]="{background:character.corporationId | toCorporationImage}"></div>
+        <div class="alliance-logo" [ngStyle]="{background:character.allianceId | toAllianceImage}"></div>
+    </div>
+</div>

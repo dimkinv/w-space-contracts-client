@@ -38,8 +38,8 @@
     "no-bitwise": true,
     "no-console": [
       true,
+      "log",
       "debug",
-      "info",
       "time",
       "timeEnd",
       "trace"
@@ -110,13 +110,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "wsc",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "wsc",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
