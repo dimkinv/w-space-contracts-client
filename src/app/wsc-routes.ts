@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 import { WelcomeComponent } from 'app/welcome/welcome.component';
-import { ContractsComponent } from 'app/content/components/contracts/contracts.component';
-import { NewContractComponent } from 'app/content/components/new-contract/new-contract.component';
+import { ContractsComponent } from 'app/content/pages/contracts/contracts.component';
+import { EditContractComponent } from 'app/content/pages/edit-contract/edit-contract.component';
 import { ContentComponent } from 'app/content/content.component';
+import { ContractComponent } from './content/pages/contract/contract.component';
 
 export const wscRoutes: Routes = [
     {
@@ -23,9 +24,13 @@ export const wscRoutes: Routes = [
                 component: ContractsComponent
             },
             {
-                path: 'new-contract',
-                component: NewContractComponent
+                path: 'contract/:id',
+                component: ContractComponent
+            },
+            {
+                path: 'edit-contract/:id',
+                component: EditContractComponent
             }
         ]
     },
-]
+];

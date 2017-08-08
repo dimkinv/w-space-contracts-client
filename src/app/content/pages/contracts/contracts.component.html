@@ -1,0 +1,31 @@
+<div class="row secondary-header-bar">
+    <div class="col-md-12 buttons">
+        <button type="button" class="btn btn-primary" routerLink="/content/edit-contract/new">New Contract</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>From</th>
+                <th>Origin System</th>
+                <th>Dest. System</th>
+                <th>Type</th>
+                <th>Items</th>
+                <th>Total Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let contract of contracts" [routerLink]="['/content/contract', contract._id]">
+                <td>{{contract.from_name}}</td>
+                <td>{{contract.from_system_name}}</td>
+                <td>{{contract.to_system_name}}</td>
+                <td>{{contract.type}}</td>
+                <td>{{contract.items.length}}</td>
+                <td>{{contract.total_price | currency}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

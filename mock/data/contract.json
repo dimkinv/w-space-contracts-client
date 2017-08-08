@@ -1,0 +1,24 @@
+{
+    "_id": "3453485340958340",
+    "started_at": 34234234234,
+    "from_id": 345345345,
+    "to_id": 34234454,
+    "from_name": "Ashtar Veres",
+    "from_system_id": 324234234,
+    "to_system_id": 45345345,
+    "from_system_name": "Jita",
+    "to_system_name": "Rens",
+    "type": "buy",
+    "to_name": "Umka inc.",
+    "privacy": "alliance",
+    "margin": -10,
+    "contract_length": 1,
+    "total_price": 12000000,
+    "items": [
+        {
+            "id": 3453455,
+            "name": "Rifter",
+            "amount": 20
+        }
+    ]
+}

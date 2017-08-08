@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'app/services/auth/auth.service';
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from 'app/services/auth/auth.service';
 
 @Component({
     selector: 'wsc-root',
@@ -7,8 +7,8 @@ import { AuthService } from 'app/services/auth/auth.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    ngOnInit(): void {
-        this.authService.initQueryListener();
+    async ngOnInit() {
+        await this.authService.initQueryListener();
     }
 
     constructor(private authService: AuthService) {
